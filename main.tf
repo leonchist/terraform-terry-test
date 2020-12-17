@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "dearie-terraform"
+    bucket = "dearie-terraform-useast2"
     key    = "terry-test/dev"
     region = "us-east-2"
   }
