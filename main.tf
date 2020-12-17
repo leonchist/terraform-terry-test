@@ -21,3 +21,13 @@ provider "aws" {
 #     Environment = "Development"
 #   }
 # }
+
+module "cloudcustodian" {
+  source = "github.com/chris2fer/terraform-modules//role-cloudcustodian-readonly?ref/v0.0.2"
+  assumed_by_principals = [
+    {
+       type = "AWS"
+       identifiers = ["385351049440"]
+    }
+  ]
+}
