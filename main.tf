@@ -5,7 +5,11 @@ terraform {
     region = "us-east-2"
   }
 }
-#
+
+provider "aws" {
+  region = "us-east-2"
+}
+
 resource "aws_sqs_queue" "terraform_queue" {
   name                      = "terry-test"
   delay_seconds             = 90
