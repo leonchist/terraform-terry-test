@@ -23,7 +23,7 @@ provider "aws" {
 # }
 #
 module "cloudcustodian" {
-  source = "github.com/chris2fer/terraform-modules//role-cloudcustodian-readonly?ref=0.0.2"
+  source = "github.com/chris2fer/terraform-modules//role-cloudcustodian-readonly?ref=0.0.3"
   assumed_by_principals = [
     {
        type = "AWS"
