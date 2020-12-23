@@ -25,5 +25,8 @@ provider "aws" {
 module "cloudcustodian" {
   source = "github.com/chris2fer/terraform-modules//role-cloudcustodian-readonly" #?ref=0.0.3
   assumed_by_principals = ["385351049440"]
-
+}
+module "cloudcustodian-autotag" {
+  source = "github.com/chris2fer/terraform-modules//role-cloudcustodian-autotag"
+  assumed_by_principals = ["385351049440"]
 }
